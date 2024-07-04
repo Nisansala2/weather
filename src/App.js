@@ -38,7 +38,9 @@ function App() {
              Enter in a city to get the weather</p>
             <div className='cloud'>
             <img src='/images/sun.webp' alt= 'sun' style={{ height: '180px' } }/ >
+           
             </div>
+            <button>Login</button>
             </div>
         ):
         (
