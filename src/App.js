@@ -9,6 +9,7 @@ function App() {
   const apiKey= 'd378ab9eebf51699bd8d20ecaaf78566'
   const [weatherData,setWeatherData] =useState([{}])
   const [city, setCity]= useState( "")
+
   
 
   const handlekey =(event) => {
@@ -34,6 +35,7 @@ function App() {
         }
       )
     }
+    
 
   } 
 
@@ -68,13 +70,17 @@ function App() {
         (
           <div>
           <h3 className='whead'>Weather in {weatherData.name}</h3>
+          
           <div className='weather-data'>
           
             <div className='temp'>
           
-          <p >Temperature  {weatherData.main.temp}°C</p>
+          <p >Temperature {weatherData.main.temp}°C <br/>
+
+          </p>
           </div>
           <div className='text'>
+
           <p className='des'>Weather: {weatherData.weather[0].description}</p>
           <p className='hum'>Humidity: {weatherData.main.humidity}%</p>
           <p className='wind'>Wind Speed: {weatherData.wind.speed} m/s</p>
@@ -83,7 +89,7 @@ function App() {
         </div>
         )}
         {weatherData.cod === "404" ?(
-          <p> City not found</p>
+          <p className='city'> City not found</p>
         ):(
           <></>
         )}
