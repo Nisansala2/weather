@@ -1,4 +1,5 @@
 
+
 import './App.css';
 import React, { useState } from 'react';
 import './Components/Weather.css';
@@ -42,7 +43,7 @@ function App() {
   
     return (
       <div className='app'>
-      <h2 className='welcome'>Welcome to weather app.</h2>
+      <h2 className='welcome'>Welcome to check weather </h2>
       <p className='desp'> 
        Enter in a city to get the weather</p>
       
@@ -54,6 +55,7 @@ function App() {
         </div>
         <div className='button'>
              <button onClick={handlekey}>Serach</button>
+
     </div>
     </div>
 
@@ -75,15 +77,20 @@ function App() {
           
             <div className='temp'>
           
-          <p >Temperature {weatherData.main.temp}°C <br/>
+          <p >Temperature <br/> {weatherData.main.temp}°C <br/>
 
           </p>
           </div>
           <div className='text'>
-
-          <p className='des'>Weather: {weatherData.weather[0].description}</p>
-          <p className='hum'>Humidity: {weatherData.main.humidity}%</p>
-          <p className='wind'>Wind Speed: {weatherData.wind.speed} m/s</p>
+          
+            
+              
+              <p className='hum'>Humidity: {weatherData.main.humidity}%</p>
+         
+         
+          
+          <p className='wind'>Wind Speed:     {weatherData.wind.speed} m/s</p>
+          <p className='des'>Weather:      {weatherData.weather[0].description}</p>
           </div>
         </div>
         </div>

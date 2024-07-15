@@ -1,13 +1,14 @@
 
+
 .app{
     padding: 25px ;
    border-radius: 10px;
-   box-shadow: #fbbf48;
+   box-shadow: #131312;
     max-width: 340px;
-    height: 420px;
+    height: 360px;
     align-items: center;
    background-position: center;
-    background-image: linear-gradient(55deg, rgb(210, 148, 14),rgb(22, 131, 10));
+    background-image: linear-gradient(55deg, rgb(220, 181, 10),rgb(11, 173, 84));
   
     background-size: cover;
    
@@ -15,7 +16,7 @@
 .input{
    padding: 10px;
     width: 80%;
-    background-color: hsl(140, 63%, 44%);
+    background-color: gold;
     font-size: 16px;
    outline: none;
    border: none;
@@ -24,9 +25,11 @@
 }
 .button{
     padding: 10px;
-    background-color: rgb(212, 168, 7);
+    background-color:gold;
     outline: none;
-
+    color: blue;
+    font-style: bold;
+    outline: none;
 }
 .contain{
     display: flex;
@@ -34,29 +37,33 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    margin-left: 15px;
    
 }
 .weather-data{
     margin-top: 10px;
-    
     display: flex;
+    justify-content: space-between;
+    
 }
 .temp{
     font-size: 25px;
     color: rgb(234, 233, 240);
     line-height:35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 .text{
     font-size: 18px;
     text-align: left;
     color: white;
-    padding: 10px 8px;
+    
+   
 }
 .cloud{
     display: flex;
     align-items: center;
-    padding: 40px 50px;
+    margin-left: 50px;
 }
 .welcome{
     font-size: 22px;
@@ -79,5 +86,7 @@
     display: flex;
   
 }
-
-
+.sky{
+    display: flex;
+    justify-content: stretch;
+}
